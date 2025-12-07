@@ -24,22 +24,19 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20" # Actions can use newer node even if local is old
+          node-version: "20"
           cache: 'npm'
-          cache-dependency-path: music-recommendation/package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        working-directory: music-recommendation
 
       - name: Build
         run: npm run build
-        working-directory: music-recommendation
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: music-recommendation/dist
+          path: dist
 
   deploy:
     environment:
