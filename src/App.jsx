@@ -78,7 +78,7 @@ function App() {
       <div className="container mx-auto flex flex-col items-center">
         <header className="mb-12 text-center">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4 animate-fade-in-down">
-            Sonic Twin
+            Music Recomendation
           </h1>
           <p className="text-gray-400 text-lg">Discover music that shares the same soul.</p>
         </header>
